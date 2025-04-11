@@ -29,8 +29,7 @@ function verificarSenha() {
     }
 
     if (d1 === 7 && d2 === 9 && d3 === 8 && d4 === 2) {
-        mensagem.textContent = "Senha correta. Acesso permitido."
-        mensagem.style.color = "black";
+        alert("Senha correta! Acesso liberado.")
         d1.disabled = true;
         d2.disabled = true;
         d3.disabled = true;
