@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+    <head>
+       <meta charset="UTF-8"
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Cofre Lógico</title>
+       <link rel="stylesheet" href="estilo.css">
+    </head>
+    <body>
+        <h1>ACESSO RESTRITO: <br>digite a senha para continuar.</h1>
+        <br>
+        <br>
+        <div class="container">
+        <div id="senha" class="senha">
+        <input type="number" id="d1">
+        <input type="number" id="d2">
+        <input type="number" id="d3">
+        <input type="number" id="d4">
+        </div>
+        <div  id="verificar">
+            <button onclick="verificarSenha()">Verificar</button>
+        </div>
+        <div id="dicas" class="dicas">
+           <ul>
+            <li>A soma de todos os dígitos é <strong>16</strong>.</li>
+            <li>O primeiro dígito é <strong>ímpar</strong>.</li>
+            <li><strong>Nenhum</strong> dígito se repete.</li>
+            <li>O terceiro dígito é <strong>par</strong> e maior que <strong>3</strong>.</li>
+            <li>O último dígito é <strong>primo</strong>.</li>
+            <li>O segundo dígito é divisível por <strong>3</strong>.</li>
+        </ul>
+        <div id="nome">
+            <p>Cofre Lógico 1.0</p>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
