@@ -10,7 +10,7 @@ Este é um jogo simples de lógica, em que o usuário deve digitar números de a
 
 ## Como acessar
 
-Você pode visualizar o publicado pelo GitHub Pages neste link:
+Você pode visualizar o publicado pelo GitHub Pages neste link: https://julianaxalves.github.io/CofreLogico/
 
 ## Tecnologias usadas
 
