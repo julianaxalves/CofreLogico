@@ -16,13 +16,13 @@ function verificarSenha() {
         document.getElementById("d2").style.color = "red";
     }
 
-    if (d2 === "8") {
+    if (d3 === "8") {
         document.getElementById("d3").style.color = "green";
     } else {
         document.getElementById("d3").style.color = "red";
     }
 
-    if (d2 === "2") {
+    if (d4 === "2") {
         document.getElementById("d4").style.color = "green";
     } else {
         document.getElementById("d4").style.color = "red";
