@@ -36,9 +36,9 @@ function verificarSenha() {
         d4.disabled = true;
     } else {
         document.body.style.backgroundColor = "red";
-        alert("Acesso negado!")
+        alert("Acesso negado!");
         setTimeout(function() {
           location.reload();
-        }, 5000;
+        }, 5000);
     }
 }
