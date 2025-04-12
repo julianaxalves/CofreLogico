@@ -1,4 +1,4 @@
-# Projeto: Jogo Lógico
+# Projeto: Jogo Cofre Lógico
 
 Este é um jogo simples de lógica, em que o usuário deve digitar números de acordo com as dicas até acertar a combinação correta.
 
