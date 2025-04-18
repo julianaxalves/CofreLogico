@@ -1,0 +1,271 @@
+/*TELA INICIAL*/
+
+.telaInicial {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+
+.videoTela {
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.conteudo1 {
+    position: relative;
+    z-index: 1;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes zommIn {
+    from {
+        transform: scale(0);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+#h1Inicial {
+    margin-top: 250px;
+    animation: slideInLeft 0.8s ease-out;
+    font-size: 150px;
+    font-family: 'Lucida Sans Unicode';
+    text-shadow: 8px 8px 16px black;
+    text-align: center;
+}
+
+#irCofre {
+    animation: zommIn 0.6s ease-out;
+    background-color: #0f0f3d;
+    font-size: 30px;
+    font-family: 'Lucida Sans Unicode';
+    z-index: -1;
+    border: 2px solid #00ffcc;
+    padding: 15px 25px;
+    border-color: aqua;
+    color: #00ffcc;
+    background-size: cover;
+    margin-top: 100px;
+    width: 250px;
+    height: 125px;
+    text-shadow: 2px 2px 4px #000;
+    box-shadow: 4px 4px 8px #00ffcc;
+    transition: all 0.3s ease;
+    border-radius: 10px;
+}
+
+#irCofre:hover {
+    background-color: #00ffcc;
+    color: #0f0f3d;
+    box-shadow: 6px 6px 12px #00ffcc;
+    cursor: pointer;
+}
+
+#pInicial {
+    margin-top: 100px;
+    text-shadow: 4px 4px 8px black;
+}
+
+/* TELA DO COFRE*/
+
+h1 {
+    text-align: center;
+    color: rgb(252, 248, 248);
+    font-family: sans-serif;
+}
+
+#conteudo {
+   display: none;
+   flex-direction: column;
+   align-content: center;
+   align-items: center;
+    
+}
+
+#tentativas {
+    display: flex;
+    gap: 10px;
+}
+
+.t {
+    background-color: green;
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 4px greenyellow;
+}
+
+@keyframes pulse {
+    0% {filter: brightness(100%)}
+    50% {filter: brightness(110%);}
+    100% {filter: brightness(100%);}
+}
+
+.d {
+    animation: pulse 4s infinite;
+    height: 100px !important;
+    width: 100px !important;
+    box-shadow: 4px 4px 8px greenyellow;
+}
+
+.verificar {
+    width: 100px;
+    height: 50px;
+    margin-top: 50px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: bisque;
+    box-shadow: 2px 2px 4px burlywood;
+}
+
+.senha {
+    margin-top: 50px;
+}
+
+
+.h1c {
+    font-family: 'Lucida Sans Unicode';
+    font-size: 60px;
+    text-shadow: 3px 3px 6px black;
+}
+
+.videoConteudo {
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+#d1,#d2,#d3,#d4 {
+    width: 60px;
+    height: 60px;
+    font-size: 50px;
+    text-align: center;
+}
+
+.dicas {
+    padding: 5px 5px 5px 5px;
+    background-color: rgba(225,225,225,0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    box-shadow: 2px 2px 2px 2px rgb(48, 73, 11);
+    color: white;
+    text-shadow: 2px 2px 4px #000;
+    height: 60;
+    width: 120;
+    font-size: 15px;
+    margin-top: 30px;
+    text-align: center;
+    border: solid 5px rgb(3, 49, 3);
+    padding: 5px 5px 5px 5px;
+    font-family: 'Lucida Sans Unicode';
+}
+
+.dica {
+    margin-bottom: 3px;
+}
+
+#nome {
+    padding: 100px;
+    text-align: center;
+}
+
+#verificar {
+    padding: 30px;
+    text-align: center;
+}
+
+/* TELA DE SUCESSO */
+
+#telaSucesso {
+    display: none;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+
+.videoSucesso {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.conSucesso {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
+
+.h1sucesso {
+    margin-top: 300px;
+    font-size: 60px;
+    color: white;
+    z-index: 1;
+    text-shadow: 4px 4px 8px black;
+    font-family: Lucida Sans Unicode;
+}
+
+#proximoNivel {
+    width: 100;
+    height: 50;
+    font-size: 30px;
+    margin-top: 20px;
+    color: aliceblue;
+    padding: 8px;
+    border-radius: 5px;
+    background-color: rgb(46, 102, 34);
+    box-shadow: 2px 2px 2px 4px rgb(55, 170, 26);
+    cursor: pointer;
+    font-family: Lucida Sans Unicode;
+}
+
+/*TELA ACESSO NEGADO*/
+
+.videoErro {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+#telaErro {
+    display: none;
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+    <head>
+       <meta charset="UTF-8"
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Cofre Lógico</title>
+       <link rel="stylesheet" href="estilo.css">
+    </head>
+    <body>
+        <section class="telaInicial" id="telaInicial">
+            <video autoplay muted loop class="videoTela">
+                <source src="fundod.mp4">
+            </video>
+            <div class="conteudo1">
+                <h1 id="h1Inicial">Cofre Lógico</h1>
+                <button onclick="irparaCofre()" id="irCofre">IR PARA<BR>O COFRE</button>
+                <p id="pInicial">by JCosta Development</p>
+            </div>
+        </section>
+        <section id="conteudo">
+            <video autoplay muted loop class="videoConteudo">
+                <source src="fundo0.mp4">
+            </video>
+            <audio src="nightmare-code-50783.mp3" id="audio1" loop autoplay></audio>
+        <h1 class="h1c">COFRE 01</h1>
+        <div class="container">
+        <div id="senha" class="senha">
+        <input min="0" max="9" maxlength="1" type="text" class="d" id="d1">
+        <input  min="0" max="9" maxlength="1" type="text" class="d" id="d2">
+        <input min="0" max="9" maxlength="1" type="text" class="d" id="d3">
+        <input min="0" max="9" maxlength="1" type="text" class="d" id="d4">
+        </div>
+        <div  id="verificar">
+            <button class="verificar" data-nivel="1" onclick="verificarSenha(this)">VERIFICAR</button>
+        </div>
+        <div id="dicas" class="dicas">
+           <ul style="list-style-type: none;">
+            <li class="dica">A soma de todos os dígitos é <strong>26</strong>.</li>
+            <li class="dica">O primeiro dígito é <strong>ímpar</strong>.</li>
+            <li class="dica"><strong>Nenhum</strong> dígito se repete.</li>
+            <li class="dica">O terceiro dígito é <strong>par</strong> e maior que <strong>3</strong>.</li>
+            <li class="dica">O último dígito é <strong>primo</strong>.</li>
+            <li class="dica">O segundo dígito é divisível por <strong>3</strong>.</li>
+        </ul>
+        </div>
+       </section>
+       <section id="telaSucesso">
+        <div class="mensagemSucesso">
+            <video autoplay muted class="videoSucesso">
+                <source src="cofreAbrindo.mp4">
+            </video>
+            <audio autoplay id="audio2" src="cofreabrindo.mp3"></audio>
+            <div class="conSucesso" style="display:none;">
+            <h1 class="h1sucesso">COFRE DESBLOQUEADO!</h1>
+            <button onclick="proximoNivel()" id="proximoNivel">PRÓXIMO NÍVEL</button>
+            </div>
+        </div>
+       </section>
+       <section id="telaErro">
+          <video autoplay muted loop class="videoErro">
+              <source src="negado.mp4">
+          </video>
+          <audio autoplay loop id="audio3" src="alerta.mp3"></audio>
+       </section>
+        <script src="script.js"></script>
+    </body>
+</html>
