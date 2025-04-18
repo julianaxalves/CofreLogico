@@ -240,6 +240,7 @@ h1 {
 }
 
 #proximoNivel {
+    display: inline-block;
     font-size: 30px;
     margin-top: 20px;
     color: aliceblue;
