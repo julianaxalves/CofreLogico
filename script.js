@@ -4,13 +4,33 @@ function irparaCofre() {
     document.getElementById("audio1").play();
 }
 
+let nivelAtual = 1;
+
 const senhas = {
-    1: [7, 9, 8, 2]
+    1: [7, 9, 8, 2],
+    2: [5, 3, 0, 8],
+    3: [6, 1, 7, 3],
+    4: [9, 4, 2, 6],
+    5: [7, 2, 5, 1],
+    6: [4, 0, 8, 3],
+    7: [3, 5, 6, 1],
+    8: [8, 4, 9, 2],
+    9: [2, 9, 1, 7],
+    10: [7, 6, 4, 3]
+};
+
+const dicas = {
+    2: [
+        "A soma dos dois primeiros dígitos é 8.",
+        "O terceiro dígito é o menor possível",
+        "O último dígito é par e não se repete com os anteriores",
+        "Um dos dígitos é múltiplo de 5",
+        "A senha tem dois dígitos pares e dois ímpares"
+    ]
 };
 
 function verificarSenha(botao) {
-    const nivel = botao.dataset.nivel;
-    const senhaCorreta = senhas[nivel];
+    const senhaCorreta = senhas[nivelAtual];
 
     const inputs = [1, 2, 3, 4].map(i => Number(document.getElementById("d" + i).value));
     let acerto = true;
@@ -30,7 +50,6 @@ function verificarSenha(botao) {
         setTimeout(function() {
             document.querySelector(".conSucesso").style.display = "flex";
         }, 7000);
-        inputs.forEach((_, i) => document.getElementById("d" + (i + 1)).disabled = true);
     } else {
         document.querySelector(".telaInicial").style.display = "none";
         document.querySelector("#conteudo").style.display = "none";
@@ -44,4 +63,19 @@ function verificarSenha(botao) {
             window.scrollTo(0, 0);
         }, 10000);
     }
+}
+
+function proximoNivel() {
+    nivelAtual = nivelAtual + 1;
+    const dicasNivel = dicas[nivelAtual];
+    document.querySelector(".telaInicial").style.display = "none";
+        document.querySelector("#conteudo").style.display = "flex";
+        document.querySelector("#telaSucesso").style.display = "none";
+        document.getElementById("audio1").play();
+        document.getElementById("audio2").pause();
+        for (let i=1; i <= 4; i++) {
+            document.getElementById("d" + i).value = "";
+        }
+        document.querySelector(".h1c").textContent = "COFRE " + nivelAtual;
+        document.getElementById("dicas").textContent = dicasNivel.join("\n");
 }
