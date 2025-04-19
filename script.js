@@ -33,28 +33,28 @@ const dicas = {
         "O último dígito é primo.",
         "A soma de todos os dígitos é maior que 15.",
         "Nenhum dígito é zero."
-    ]
+    ],
     4: [
         "A senha tem dois dígitos pares e dois ímpares.",
         "O primeiro dígito é maior que todos os outros.",
         "O terceiro é múltiplo de 2, mas menor que 5.",
         "Nenhum dígito se repete.",
         "A diferença entre o segundo e o quarto é 2."
-    ]
+    ],
     5: [
         "A senha tem dois dígitos pares e dois ímpares.",
         "O primeiro dígito é maior que todos os outros.",
         "O terceiro é múltiplo de 2, mas menor que 5.",
         "Nenhum dígito se repete.",
         "A diferença entre o segundo e o quarto é 2."
-    ]
+    ],
     6: [
         "O segundo dígito é zero.",
         "O primeiro é múltiplo de 4.",
         "O terceiro é o maior dígito da senha.",
         "A soma de todos é menor que 16.",
         "Nenhum dígito se repete."
-    ]
+    ],
 };
 
 function verificarSenha(botao) {
