@@ -172,6 +172,7 @@ h1 {
 }
 
 .dicas {
+    white-space: pre-line;
     padding: 5px 5px 5px 5px;
     background-color: rgba(225,225,225,0.1);
     backdrop-filter: blur(5px);
