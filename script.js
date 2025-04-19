@@ -22,10 +22,10 @@ const senhas = {
 const dicas = {
     2: [
         "A soma dos dois primeiros dígitos é 8.",
-        "O terceiro dígito é o menor possível",
-        "O último dígito é par e não se repete com os anteriores",
-        "Um dos dígitos é múltiplo de 5",
-        "A senha tem dois dígitos pares e dois ímpares"
+        "O terceiro dígito é o menor possível.",
+        "O último dígito é par e não se repete com os anteriores.",
+        "Um dos dígitos é múltiplo de 5.",
+        "A senha tem dois dígitos pares e dois ímpares."
     ],
     3: [
         "O primeiro dígito é maior que o segundo.",
