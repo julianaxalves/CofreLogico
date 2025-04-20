@@ -204,6 +204,16 @@ h1 {
     text-align: center;
 }
 
+.verificar {
+    box-shadow: rgb(2, 2, 2);
+}
+
+.verificar:hover {
+    background-color: greenyellow;
+    box-shadow: 2px 2px 4px yellow;
+    cursor: pointer;
+}
+
 /* TELA DE SUCESSO */
 
 #telaSucesso {
@@ -268,4 +278,26 @@ h1 {
 
 #telaErro {
     display: none;
+}
+
+#tentarNovamente {
+    display: flex;
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    justify-content: center;
+    font-size: 30px;
+    padding: 10px;
+    z-index: 1;
+    box-shadow: 4px 4px 8px #e69292;
+    border-radius: 10px;
+    background-color: rgb(221, 135, 135);
+}
+
+#tentarNovamente:hover {
+    cursor: pointer;
+    background-color: #00ffcc;
+    color: #0f0f3d;
+    box-shadow: 6px 6px 12px #00ffcc;
 }
