@@ -1,5 +1,20 @@
 /*TELA INICIAL*/
 
+@media (max-width: 600px) {
+    .telaInicial {
+        min-height: 100vh;
+    }
+    .conteudo1 {
+        padding: 10px;
+    }
+    #h1Inicial {
+        margin-top: 50%;
+        font-size: 80px;
+        text-shadow: 2px 2px 8px black;
+        text-align: center;
+    }
+}
+
 .telaInicial {
     display: flex;
     flex-direction: column;
