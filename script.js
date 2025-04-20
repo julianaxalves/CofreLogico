@@ -101,9 +101,28 @@ function proximoNivel() {
         document.querySelector("#telaSucesso").style.display = "none";
         document.getElementById("audio1").play();
         document.getElementById("audio2").pause();
+    [1, 2, 3, 4].forEach(i => {
+        document.getElementById("d" + i).style.color = "black";
+    });
         for (let i=1; i <= 4; i++) {
             document.getElementById("d" + i).value = "";
         }
         document.querySelector(".h1c").textContent = "COFRE " + nivelAtual;
         document.getElementById("dicas").textContent = dicasNivel.join("\n");
+}
+
+function tentarNovamente() {
+    irparaCofre();
+    document.querySelector("#telaErro").style.display = "none";
+    document.getElementById("audio1").play();
+    document.getElementById("audio3").pause();
+    const inputs = [1, 2, 3, 4].map(i => Number(document.getElementById("d" + i).value));
+
+    for (let i=0; i< inputs.length; i++) {
+        if (inputs[i] === senhas[nivelAtual][i]) {
+            document.getElementById("d" + (i+1)).style.color = "green";
+        } else {
+            document.getElementById("d" + (i+1)).style.color = "red";
+        }
+    }
 }
