@@ -86,10 +86,6 @@ function verificarSenha(botao) {
         document.getElementById("audio1").pause();
         document.getElementById("audio2").pause();
         document.getElementById("audio3").play();
-        setTimeout(function() {
-            location.reload();
-            window.scrollTo(0, 0);
-        }, 10000);
     }
 }
 
