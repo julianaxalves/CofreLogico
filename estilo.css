@@ -1,8 +1,11 @@
 /*TELA INICIAL*/
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     .telaInicial {
-        min-height: 100vh;
+        height: 100vh;
+        width: 100vw;
+        position: relative;
+        overflow: hidden;
     }
     .conteudo1 {
         padding: 10px;
@@ -17,7 +20,9 @@
 
 .telaInicial {
     position: relative;
-    min-height: 100vh;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
     display: flex;
     flex-direction: column;
     align-content: center;
