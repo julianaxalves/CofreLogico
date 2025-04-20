@@ -34,14 +34,14 @@
             <button class="verificar" data-nivel="1" onclick="verificarSenha(this)">VERIFICAR</button>
         </div>
         <div id="dicas" class="dicas">
-           <ul style="list-style-type: none;">
-            <li class="dica">A soma de todos os dígitos é <strong>26</strong>.</li>
-            <li class="dica">O primeiro dígito é <strong>ímpar</strong>.</li>
-            <li class="dica"><strong>Nenhum</strong> dígito se repete.</li>
-            <li class="dica">O terceiro dígito é <strong>par</strong> e maior que <strong>3</strong>.</li>
-            <li class="dica">O último dígito é <strong>primo</strong>.</li>
-            <li class="dica">O segundo dígito é divisível por <strong>3</strong>.</li>
-        </ul>
+            <p class="dica">
+                A soma de todos os dígitos é 26.
+                O primeiro dígito é ímpar.
+                Nenhum dígito se repete.
+                O terceiro dígito é par e maior que 3.
+                O último dígito é primo.
+                O segundo dígito é divisível por 3.
+            </p>
         </div>
        </section>
        <section id="telaSucesso">
@@ -61,6 +61,7 @@
               <source src="video/negado.mp4">
           </video>
           <audio loop id="audio3" src="audio/alerta.mp3"></audio>
+          <button onclick="tentarNovamente()" id="tentarNovamente">TENTAR NOVAMENTE</button>
        </section>
         <script src="script.js"></script>
     </body>
