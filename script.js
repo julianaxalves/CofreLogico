@@ -73,7 +73,6 @@ function verificarSenha(botao) {
         document.querySelector(".telaInicial").style.display = "none";
         document.querySelector("#conteudo").style.display = "none";
         document.querySelector("#telaSucesso").style.display = "flex";
-        document.getElementById("audio1").pause();
         document.getElementById("audio2").play();
         setTimeout(function() {
             document.querySelector(".conSucesso").style.display = "flex";
@@ -83,7 +82,6 @@ function verificarSenha(botao) {
         document.querySelector("#conteudo").style.display = "none";
         document.querySelector("#telaSucesso").style.display = "none";
         document.querySelector("#telaErro").style.display = "flex";
-        document.getElementById("audio1").pause();
         document.getElementById("audio2").pause();
         document.getElementById("audio3").play();
     }
@@ -96,7 +94,6 @@ function proximoNivel() {
     document.querySelector(".telaInicial").style.display = "none";
         document.querySelector("#conteudo").style.display = "flex";
         document.querySelector("#telaSucesso").style.display = "none";
-        document.getElementById("audio1").play();
         document.getElementById("audio2").pause();
     [1, 2, 3, 4].forEach(i => {
         document.getElementById("d" + i).style.color = "black";
@@ -111,7 +108,6 @@ function proximoNivel() {
 function tentarNovamente() {
     irparaCofre();
     document.querySelector("#telaErro").style.display = "none";
-    document.getElementById("audio1").play();
     document.getElementById("audio3").pause();
     const inputs = [1, 2, 3, 4].map(i => Number(document.getElementById("d" + i).value));
 
