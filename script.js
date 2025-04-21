@@ -9,7 +9,7 @@ let nivelAtual = 1;
 const senhas = {
     1: [7, 9, 8, 2],
     2: [5, 3, 0, 8],
-    3: [6, 1, 7, 3],
+    3: [6, 1, 2, 3],
     4: [9, 4, 2, 6],
     5: [7, 2, 5, 1],
     6: [4, 0, 8, 3],
@@ -104,7 +104,7 @@ function verificarSenha(botao) {
         document.getElementById("audio2").play();
         setTimeout(function() {
             document.querySelector(".conSucesso").style.display = "flex";
-        }, 7000);
+        }, 8000);
     } else {
         document.querySelector(".telaInicial").style.display = "none";
         document.querySelector("#conteudo").style.display = "none";
@@ -120,9 +120,9 @@ function proximoNivel() {
     const dicasNivel = dicas[nivelAtual];
     document.getElementById("imagem").src = `imagem/imagem${nivelAtual}.jpg`;
     document.querySelector(".telaInicial").style.display = "none";
-        document.querySelector("#conteudo").style.display = "flex";
-        document.querySelector("#telaSucesso").style.display = "none";
-        document.getElementById("audio2").pause();
+    document.querySelector("#conteudo").style.display = "flex";
+    document.querySelector("#telaSucesso").style.display = "none";
+    document.getElementById("audio2").pause();
     [1, 2, 3, 4].forEach(i => {
         document.getElementById("d" + i).style.color = "black";
     });
