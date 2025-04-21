@@ -32,6 +32,6 @@ Desvendar a combinação correta de cada cofre usando lógica dedutiva. Nenhuma 
 - Sistema de pontuação e tempo.
 - Suporte para dispositivos móveis otimizado.
 
-**Autor**
+**Autora**
 
 Desenvolvido por JCosta Development.
