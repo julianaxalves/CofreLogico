@@ -61,21 +61,21 @@ const dicas = {
         "O último dígito é menor que o primeiro.",
         "A soma dos quatro é um número primo.",
         "Nenhum é zero ou nove."
-    ]
+    ],
     8: [
         "O primeiro e o último dígitos somam 10.",
         "O segundo é maior que o terceiro.",
         "O terceiro dígito é menor que 5.",
         "Há três dígitos pares.",
         "Nenhum número se repete."
-    ]
+    ],
     9: [
         "O segundo e terceiro dígitos são consecutivos.",
         "O primeiro dígito é múltiplo de 2.",
         "O último dígito é um número primo maior que 5.",
         "A soma de todos é entre 15 e 20.",
         "Nenhum número se repete."
-    ]
+    ],
     10: [
         "O segundo dígito é exatamente a metade do primeiro.",
         "O terceiro é maior que o segundo.",
