@@ -92,6 +92,7 @@ function verificarSenha(botao) {
 function proximoNivel() {
     nivelAtual = nivelAtual + 1;
     const dicasNivel = dicas[nivelAtual];
+    document.getElementById("imagem").src = `imagem/imagem${nivelAtual}.jpg`;
     document.querySelector(".telaInicial").style.display = "none";
         document.querySelector("#conteudo").style.display = "flex";
         document.querySelector("#telaSucesso").style.display = "none";
