@@ -105,20 +105,6 @@ h1 {
     
 }
 
-#tentativas {
-    display: flex;
-    gap: 10px;
-}
-
-.t {
-    background-color: green;
-    width: 20px;
-    height: 20px;
-    padding: 5px;
-    border-radius: 50%;
-    box-shadow: 2px 2px 4px greenyellow;
-}
-
 @keyframes pulse {
     0% {filter: brightness(100%)}
     50% {filter: brightness(110%);}
@@ -153,7 +139,7 @@ h1 {
     text-shadow: 3px 3px 6px black;
 }
 
-.videoConteudo {
+#imagem {
     position: absolute;
     top:0;
     bottom: 0;
