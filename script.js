@@ -1,7 +1,6 @@
 function irparaCofre() {
     document.querySelector(".telaInicial").style.display = "none";
     document.querySelector("#conteudo").style.display = "flex";
-    document.getElementById("audio1").play();
 }
 
 let nivelAtual = 1;
@@ -118,7 +117,7 @@ function verificarSenha(botao) {
 function proximoNivel() {
     nivelAtual = nivelAtual + 1;
     const dicasNivel = dicas[nivelAtual];
-    document.getElementById("imagem").src = `imagem/imagem${nivelAtual}.jpg`;
+    document.getElementById("imagem").src = `imagem${nivelAtual}.jpg`;
     document.querySelector(".telaInicial").style.display = "none";
     document.querySelector("#conteudo").style.display = "flex";
     document.querySelector("#telaSucesso").style.display = "none";
@@ -132,7 +131,7 @@ function proximoNivel() {
         document.querySelector(".h1c").textContent = "COFRE " + nivelAtual;
         document.getElementById("dicas").textContent = dicasNivel.join("\n");
 }
-
+ 
 function tentarNovamente() {
     irparaCofre();
     document.querySelector("#telaErro").style.display = "none";
