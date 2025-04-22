@@ -1,15 +1,4 @@
 /*TELA INICIAL*/
-
-@media (max-width: 768px) {
-    .telaInicial {
-        padding: 1rem;
-        min-height: 100dvh;
-    }
-    .videoTela {
-        height: 100dvh;
-        width: 100vw;
-    }
-}
     
 .telaInicial {
     display: flex;
