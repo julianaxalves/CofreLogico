@@ -1,4 +1,9 @@
 /*TELA INICIAL*/
+
+@media (max-width: 768px) {
+    .videoTela {
+        position: relative;
+    }
     
 .telaInicial {
     display: flex;
