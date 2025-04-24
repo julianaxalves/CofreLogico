@@ -1,5 +1,11 @@
 /*TELA INICIAL*/
-    
+
+@media (max-width: 768px) {
+    .videoTela {
+        position: flexive;
+    }
+}
+
 .telaInicial {
     display: flex;
     flex-direction: column;
