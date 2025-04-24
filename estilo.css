@@ -288,3 +288,47 @@ h1 {
     color: #0f0f3d;
     box-shadow: 6px 6px 12px #00ffcc;
 }
+
+/*FIM DE JOGO*/
+
+#fimdeJogo {
+    display: block;
+    position: absolute;
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    color: aliceblue;
+}
+
+#fim {
+    margin-top: 18%;
+    color: red;
+    font-size: 100px;
+}
+
+#recomecar, #sair  {
+    background-color: #e69292;
+    padding: 15px;
+    margin: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: rgb(252, 206, 212) 2px 2px 4px;
+    color:#0f0f3d;
+    font-size: 15px;
+}
+
+#recomecar:hover, #sair:hover {
+    background-color: beige;
+    cursor: pointer;
+}
+
+#botoes {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    padding: 25px;
+    margin-left: 40%;
+}
