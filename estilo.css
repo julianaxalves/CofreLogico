@@ -244,12 +244,16 @@ h1 {
     font-size: 30px;
     margin-top: 20px;
     color: aliceblue;
-    padding: 8px;
-    border-radius: 5px;
+    padding: 10px;
+    border-radius: 10px;
     background-color: rgb(46, 102, 34);
-    box-shadow: 2px 2px 2px 4px rgb(55, 170, 26);
+    box-shadow: 2px 2px 4px rgb(55, 170, 26);
     cursor: pointer;
     font-family: Lucida Sans Unicode;
+}
+
+#proximoNivel:hover {
+    background-color: green;
 }
 
 /*TELA ACESSO NEGADO*/
