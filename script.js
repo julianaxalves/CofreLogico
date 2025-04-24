@@ -130,6 +130,9 @@ function proximoNivel() {
         }
         document.querySelector(".h1c").textContent = "COFRE " + nivelAtual;
         document.getElementById("dicas").textContent = dicasNivel.join("\n");
+    if (nivelAtual === 11) {
+        document.getElementById("fimdeJogo").style.display = "block";
+    }
 }
  
 function tentarNovamente() {
@@ -145,4 +148,13 @@ function tentarNovamente() {
             document.getElementById("d" + (i+1)).style.color = "red";
         }
     }
+
+function recomecar() {
+    irparaCofre();
+    document.getElementById("fimdeJogo").style.display = "none";
+}
+
+function sair() {
+    location.reload();
+}
 }
