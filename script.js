@@ -1,4 +1,5 @@
 function irparaCofre() {
+    document.getElementBtId("fimdeJogo").style.display = "none";
     document.querySelector(".telaInicial").style.display = "none";
     document.querySelector("#conteudo").style.display = "flex";
 }
