@@ -301,6 +301,7 @@ h1 {
     top: 0;
     bottom: 0;
     color: aliceblue;
+    z-index: -1;
 }
 
 #fim {
