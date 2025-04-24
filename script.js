@@ -29,7 +29,7 @@ const dicas = {
     ],
     3: [
         "O primeiro dígito é maior que o segundo.",
-        "O segundo e o terceiro são consecutivos.",
+        "O segundo, o terceiro e o quarto são consecutivos.",
         "O último dígito é primo.",
         "A soma de todos os dígitos é maior que 15.",
         "Nenhum dígito é zero."
