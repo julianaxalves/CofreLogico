@@ -1,40 +1,5 @@
 /*TELA INICIAL*/
 
-@media (max-width: 768px) {
-    .telaInicial {
-        max-width: 100%;
-    }
-    .conteudo1 {
-        padding: 5px;
-    }
-    #h1Inicial {
-    font-size: 15px;
-    font-family: 'Lucida Sans Unicode';
-    text-shadow: 2px 2px 4px black;
-    text-align: center;
-}
-
-    #irCofre {
-    font-size: 5px;
-    border: 1px solid #00ffcc;
-    margin-top: 20px;
-    width: 60px;
-    height: 30px;
-    text-shadow: 1px 1px 2px #000;
-    box-shadow: 2px 2px 4px #00ffcc;
-    border-radius: 5px;
-}
-
-#irCofre:hover {
-    box-shadow: 2px 2px 4px #00ffcc;
-}
-#pInicial {
-    text-shadow: 1px 1px 2px black;
-}
-    
-
-}
-
 .telaInicial {
     display: flex;
     flex-direction: column;
