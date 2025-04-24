@@ -292,7 +292,7 @@ h1 {
 /*FIM DE JOGO*/
 
 #fimdeJogo {
-    display: block;
+    display: none;
     position: absolute;
     background-color: black;
     height: 100%;
