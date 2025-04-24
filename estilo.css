@@ -2,9 +2,6 @@
 
 @media (max-width: 768px) {
     .telaInicial {
-        padding: 1rem;
-    }
-    .telaInicial >* {
         max-width: 100%;
     }
     .conteudo1 {
