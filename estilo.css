@@ -12,14 +12,14 @@
     }
     #h1Inicial {
     margin-top: 50%;
-    font-size: 50px;
+    font-size: 25px;
     font-family: 'Lucida Sans Unicode';
     text-shadow: 2px 2px 4px black;
     text-align: center;
 }
 
-#irCofre {
-    font-size: 10px;
+    #irCofre {
+    font-size: 5px;
     border: 1px solid #00ffcc;
     margin-top: 20px;
     width: 60px;
@@ -32,6 +32,10 @@
 #irCofre:hover {
     box-shadow: 2px 2px 4px #00ffcc;
 }
+#pInicial {
+    text-shadow: 1px 1px 2px black;
+}
+    
 
 }
 
