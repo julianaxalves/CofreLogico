@@ -96,10 +96,15 @@ h1 {
 }
 
 #conteudo {
-   display: none;
-   flex-direction: column;
-   align-content: center;
-   align-items: center;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    text-align: center;
+    color: white;
+    margin: 0;
     
 }
 
