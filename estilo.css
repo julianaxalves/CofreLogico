@@ -9,6 +9,7 @@
     position: relative;
     text-align: center;
     color: white;
+    margin: 0;
 }
 
 .videoTela {
@@ -83,6 +84,7 @@
     bottom: 2%;
     text-shadow: 4px 4px 8px black;
     font-size: 1vw;
+    text-align: center;
 }
 
 /* TELA DO COFRE*/
