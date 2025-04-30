@@ -131,10 +131,6 @@ h1 {
     box-shadow: 2px 2px 4px burlywood;
 }
 
-.senha {
-    margin-top: 50px;
-}
-
 
 .h1c {
     font-family: 'Lucida Sans Unicode';
@@ -188,15 +184,6 @@ h1 {
 #nome {
     padding: 100px;
     text-align: center;
-}
-
-#verificar {
-    padding: 30px;
-    text-align: center;
-}
-
-.verificar {
-    box-shadow: rgb(2, 2, 2);
 }
 
 .verificar:hover {
